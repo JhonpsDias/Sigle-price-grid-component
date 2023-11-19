@@ -11,7 +11,7 @@ body {
     align-items: center;
     background-color: #e7eef6;
     font-family: var(--font-family);
-    color: var(--light-gray);
+    color: #ffffff;
     position: relative;
 }
 
@@ -34,17 +34,18 @@ body {
 
 .painel-join h1{
     color: var(--cyan);
-    font-size: 3.3rem;
+    font-size: 2.4rem;
     font-weight: 400;
 }
 
-.painel-join span {
+.painel-join .text-day {
     color: var(--bright-yellow);
-    font-size: 4rem;
+    font-size: 1.7rem;
 }
 
 .painel-join p {
     font-size: 1.7rem;
+    color: var(--light-gray);
 }
 
 .painel-subscription {
@@ -56,7 +57,7 @@ body {
 }
 
 .painel-subscription h2 {
-   font-size: 2.5rem; 
+   font-size: 2rem; 
    font-weight: 400;
 }
 
@@ -70,6 +71,7 @@ body {
     display: flex;
     align-items: center;
     font-size: 1.2rem;
+    color: var(--light-gray);
 }
 
 .painel-subscription .full-acess {
@@ -95,14 +97,20 @@ body {
 .painel-why-us {
     grid-area: painel-why-us;
     background-color: var(--light-cyan);
-    padding: 10px 40px;
+    padding: 20px 40px;
     border-radius: 0 0 7px 0;
     width: 100%;
 }
 
 .painel-why-us h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 400;
+}
+
+.painel-why-us .list-why-us li p{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 .painel-why-us p {
