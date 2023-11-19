@@ -1,0 +1,40 @@
+@media(max-width:689px) {
+
+    .container {
+        grid-template-areas: "painel-join"
+                             "painel-subscription"
+                             "painel-why-us";
+        margin:75px;
+    }
+
+    .painel-join {
+        padding:25px;
+        width: 89%;
+    }
+
+    .painel-join h1 {
+        font-size: 2rem;
+    }
+
+    .painel-subscription {
+        border-radius: 0;
+        padding: 15px;
+        width: 100%;
+    }
+
+    .painel-subscription .btn-sign-up {
+        margin: 0 auto;
+    }
+
+    .painel-why-us {
+        border-radius: 0 0 7px 7px;
+    }
+
+    .painel-why-us p {
+        width: 255px;
+    }
+
+    .rodape {
+        display: none;
+    }
+}

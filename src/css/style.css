@@ -1,0 +1,132 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7eef6;
+    font-family: var(--font-family);
+    color: var(--light-gray);
+    position: relative;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "painel-join painel-join"
+                         "painel-subscription painel-why-us";
+    grid-template-columns: repeat(2 1fr);
+    background-color: #ffffff;
+    border-radius: 7px;
+    max-width: 1440px;
+}
+
+.painel-join  {
+    grid-area: painel-join;
+    padding: 15px 30px;
+    width: 650px;
+    max-width: 1440px;
+}
+
+.painel-join h1{
+    color: var(--cyan);
+    font-size: 3.3rem;
+    font-weight: 400;
+}
+
+.painel-join span {
+    color: var(--bright-yellow);
+    font-size: 4rem;
+}
+
+.painel-join p {
+    font-size: 1.7rem;
+}
+
+.painel-subscription {
+    grid-area: painel-subscription;
+    background-color: var(--cyan);
+    padding: 20px 40px;
+    border-radius: 0 0 0 7px;
+    width: 100%;
+}
+
+.painel-subscription h2 {
+   font-size: 2.5rem; 
+   font-weight: 400;
+}
+
+.painel-subscription span {
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-right: 5px;
+}
+
+.painel-subscription p{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.painel-subscription .full-acess {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+.painel-subscription .btn-sign-up{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    background-color: var(--bright-yellow);
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: var(--light-gray);
+    border-radius: 7px;
+}
+
+.painel-subscription .btn-sign-up:hover {
+    background-color: hsl(71, 54%, 67%);
+}
+
+.painel-why-us {
+    grid-area: painel-why-us;
+    background-color: var(--light-cyan);
+    padding: 10px 40px;
+    border-radius: 0 0 7px 0;
+    width: 100%;
+}
+
+.painel-why-us h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.painel-why-us p {
+    font-size: 1.9rem;
+    width: 255px;   
+}
+
+.rodape {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    line-height: 22px;
+}
+
+.rodape p {
+    color: #000000;
+    font-size: 1.3rem;
+}
+
+.rodape a {
+    color: var(--cyan);
+}
+
+.rodape a:hover {
+    color: rgb(0, 54, 116);
+    text-decoration: underline;
+}
